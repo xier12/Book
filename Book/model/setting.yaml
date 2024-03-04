@@ -1,0 +1,22 @@
+#配置文件
+mysql:
+  #  mysql地址
+  host: 127.0.0.1
+  #  mysql端口
+  port: 3306
+  #  连接的mysql数据库名
+  db: book
+  #  连接使用的身份
+  user: root
+  #  该用户的密码
+  password: 123
+  #  日志输出等级
+  log_level: dev
+#服务端配置
+system:
+  #  地址
+  host: "0.0.0.0"
+  #  端口
+  port: 8080
+  #  日志等级
+  env: release

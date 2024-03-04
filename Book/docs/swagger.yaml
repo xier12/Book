@@ -1,0 +1,33 @@
+definitions:
+  tools.ECode:
+    properties:
+      code:
+        type: integer
+      data: {}
+      message:
+        type: string
+    type: object
+info:
+  contact:
+    email: 香香编程喵喵喵
+    name: Book API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+paths:
+  /BookIndex:
+    post:
+      consumes:
+      - application/json
+      description: 返回全部图书接囗
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/tools.ECode'
+      summary: 返回全部图书信息
+      tags:
+      - 图书查阅
+swagger: "2.0"
